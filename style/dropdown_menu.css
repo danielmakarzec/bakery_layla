@@ -3,6 +3,7 @@
     border: none;
     cursor: pointer;
     padding-bottom: 8px;
+    background: none;
 }
 
 .dropdown {
@@ -10,6 +11,7 @@
     display: inline-block;
     top: 5vh;
     left: 5vw;
+    background: transparent;
 }
 
 .dropdown-content {
@@ -36,6 +38,25 @@
     display: block;
 }
 
-/* .dropdown:hover .dropbtn {
-    background-color: #fdec74;
-} */
+.block {
+    display: block;
+}
+
+@media only screen and (max-width: 900px) {
+    .dropdown {
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .dropbtn {
+        position: absolute;
+        top: 5vh;
+        right: 5vw;
+    }
+
+    .dropdown-content {
+        width: 100%;
+        text-align: center;
+    }
+}

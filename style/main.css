@@ -62,7 +62,6 @@ section {
     width: 100%;
 }
 
-/* ...about... */
 .dual {
     display: flex;
 }
@@ -97,18 +96,34 @@ section {
     text-align: center;
 }
 
-.about {
-    background-color: darkcyan;
-}
+@media only screen and (max-width: 900px) {
+    .dual {
+        flex-direction: column;
+    }
 
-.menu {
-    background-color: darksalmon;
-}
+    .dual__img,
+    .dual__content,
+    .dual__content__header {
+        width: 100%;
+    }
 
-.contact {
-    background-color: dimgrey;
-}
+    .dual__content {
+        padding: 3em;
+    }
 
-.career {
-    background-color: olive;
+    .dual__img {
+        max-height: 40vh;
+    }
+
+    .dual__img img {
+        max-height: 100%;
+    }
+
+    .dual__content__header {
+        margin: 0 auto 1em;
+    }
+
+    #menu br {
+        display: none;
+    }
 }
