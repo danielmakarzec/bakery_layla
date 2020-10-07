@@ -1,0 +1,114 @@
+@import "dropdown_menu.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: #373A36;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f9f8f4;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    height: 100vh;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 100%; */
+    background-image: url("../img/tiles/hero.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 115vh;
+}
+
+.hero__layla-img {
+    width: 50vh;
+}
+
+.hero__menu {
+    width: 50vh;
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__menu a {
+    cursor: pointer;
+    margin-right: 5vh;
+}
+
+.hero__menu a:last-child {
+    margin: 0;
+}
+
+.hero__menu a img {
+    width: 100%;
+}
+
+/* ...about... */
+.dual {
+    display: flex;
+}
+
+.dual__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.dual__img img {
+    width: 70%;
+}
+
+.dual__content {
+    width: 50%;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+    padding: 20vh 3em;
+}
+
+.dual__content__header {
+    margin-bottom: 3em;
+    display: block;
+    margin: 0 auto 3em;
+}
+
+.dual__content p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.about {
+    background-color: darkcyan;
+}
+
+.menu {
+    background-color: darksalmon;
+}
+
+.contact {
+    background-color: dimgrey;
+}
+
+.career {
+    background-color: olive;
+}
