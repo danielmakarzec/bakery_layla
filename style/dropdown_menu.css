@@ -4,6 +4,7 @@
     cursor: pointer;
     padding-bottom: 8px;
     background: none;
+    outline: none;
 }
 
 .dropdown {
@@ -35,7 +36,7 @@
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    /* display: block; */
 }
 
 .block {
